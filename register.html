@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="regis.css">
+</head>
+<body>
+    
+  <div class="container">
+    <h2><center>Registration Form</center></h2>
+    <form id="registrationForm" onsubmit="submitForm(event)">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+     
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <label for="mobile no">Mobile No:</label>
+      <input type="number" id="mobile no" name="mobile no" required><br><br>
+      <LABEL>GENDER  &nbsp;&nbsp;: </LABEL>
+      <select>
+          <option value="gender">gender</option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="other">other</option>
+      </select>
+      <br>
+      <br>
+      <label>Date of birth : </label>
+            <input type="date" placeholder="MM/DD/YYYY"></input>
+            <br>
+            <br>
+            <label for="password">Confirm Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+        <label for="submit"></label>     
+      <input type="submit"  id="submit" value="Register">
+      
+    </form>
+    <p id="successMessage" class="hidden">Registration successful!</p>
+    <hr>
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+                <br>
+                <br>
+  </div>
+
+  <script src="regis.js"></script>
+</body>
+</html>
